@@ -1,6 +1,7 @@
 package com.devsuperior.challengethree.dto;
 
 
+import com.devsuperior.challengethree.entities.Client;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 
@@ -25,6 +26,15 @@ public class ClientDTO {
         this.income = income;
         this.birthDate = birthDate;
         this.children = children;
+    }
+
+    public ClientDTO(Client entity) {
+        id = entity.getId();
+        name = entity.getName();
+        cpf = entity.getCpf();
+        income = entity.getIncome();
+        birthDate =  entity.getBirthDate();
+        children =  entity.getChildren();
     }
 
     public Long getId() {
