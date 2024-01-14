@@ -3,3 +3,12 @@ insert into tb_client (name,cpf,income,birth_Date,children) values ('Maria de Je
 insert into tb_client (name,cpf,income,birth_Date,children) values ('Bento', '994.460.312-06',1000.0,'1990-01-01',0);
 insert into tb_client (name,cpf,income,birth_Date,children) values ('Benício', '852.555.685-89',0,'2018-02-16',0);
 insert into tb_client (name,cpf,income,birth_Date,children) values ('Priscila Maria', '940.265.367-85',10000.0,'1981-01-03',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('João Maria', '774.683.741-72',5000.0,'1955-07-25',5);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Maria de Deus', '721.767.045-43',6000.0,'1980-01-25',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Chico Bento', '994.460.312-05',1000.0,'1990-01-01',0);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Bernardo', '852.555.685-82',0,'2018-02-16',0);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Maria', '940.265.367-81',10000.0,'1981-01-03',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('José', '940.265.367-80',10000.0,'1981-01-03',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Nélio', '940.265.367-79',100000.0,'1980-01-03',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Benedito', '950.265.367-79',1000.0,'1960-01-03',2);
+insert into tb_client (name,cpf,income,birth_Date,children) values ('Paulo', '955.264.367-79',9000.0,'1965-01-03',2);
