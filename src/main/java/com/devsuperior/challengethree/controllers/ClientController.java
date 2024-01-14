@@ -1,6 +1,7 @@
 package com.devsuperior.challengethree.controllers;
 
 import com.devsuperior.challengethree.dto.ClientDTO;
+import com.devsuperior.challengethree.entities.Client;
 import com.devsuperior.challengethree.services.ClientService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,12 @@ public class ClientController {
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{id}")
                 .buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ClientDTO> update(@PathVariable Long id, @Valid @RequestBody ClientDTO dto){
+        dto = clientService.upadate(id, dto);
+        return ResponseEntity.ok(dto);
     }
 
 }
